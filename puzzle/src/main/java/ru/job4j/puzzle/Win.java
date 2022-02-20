@@ -4,7 +4,7 @@ public class Win {
     public static boolean check(int[][] board) {
         boolean rsl = false;
         for (int i = 0; i != board.length; i++) {
-            if (board[i][i] == 1 && (isMonoRow(board,i) || isMonoColumn(board, i))) {
+            if (board[i][i] == 1 && (isMonoRow(board, i) || isMonoColumn(board, i))) {
                 rsl = true;
                 break;
             }
@@ -15,7 +15,7 @@ public class Win {
     public static boolean isMonoRow(int[][] board, int row) {
         boolean rsl = true;
         for (int i = 0; i != board[row].length; i++) {
-            if (board[row][i] != 1){
+            if (board[row][i] != 1) {
                 rsl = false;
                 break;
             }
