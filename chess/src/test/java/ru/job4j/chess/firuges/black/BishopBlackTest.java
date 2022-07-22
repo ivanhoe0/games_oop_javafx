@@ -35,10 +35,7 @@ public class BishopBlackTest {
     @Test
     public void whenWayFromC1ToG5() {
         BishopBlack bishop = new BishopBlack(Cell.C1);
-        Cell[] returned = new Cell[bishop.way(Cell.G5).length];
-        for (int i = 0; i < returned.length; i++) {
-            returned[i] = bishop.way(Cell.G5)[i];
-        }
+        Cell[] returned = bishop.way(Cell.G5);
         Cell[] expected = {
                 Cell.D2, Cell.E3, Cell.F4, Cell.G5
         };
